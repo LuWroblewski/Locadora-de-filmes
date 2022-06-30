@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirada e entrega de filmes</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" type="text/css" href="style.scss">
+</head>
+
+<body>
+    <section class="paginaLoja">
+    </section>
+    <section class="backgroundlistaloja">
+    </section>
+
+
+
+    <section class="listaloja">
+    </section>
+
+    <section class="listafuncoes">
+        <div class="cardOpcoes">
+
+            <div class="textoOpcoes">
+                <div class="textoFunc">
+                    <form action="index.html" method="post"> <input type="submit" value="Adicione cliente ou filme"
+                            class="buttonLista" <br /> </form>
+                    <form action="RetiradaEntrega.html" method="post"> <input type="submit"
+                            value="Retirada e entrega de titulos" class="buttonLista" <br /> </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="listaADD">
+        <h1> Retirada e entrega de titulos</h1>
+    </section>
+    <section class="listaInput">
+        <div class="divlista">
+            <div>
+                <form action="retira.php" method="post">
+                    <h4>Retirada do titulo</h4>
+                    <p>ID titulo: <input type="text" name="IDtitulo" required="required"></p>
+                    <p>ID cliente: <input type="text" name="IDcliente" required="required"></p>
+                    <p>Data de retirada: </p>
+                    <p><input type="date" name="dataRetira" required="required"></p>
+                    <p>previsão da devolução: </p>
+                    <p><input type="date" name="dataDev" required="required"></p>
+                    <p><input class="buttonSubmit" type=submit value="Inserir venda"></p>
+                </form>
+            </div>
+            <div>
+                <form action="Entrega.php" method="post">
+                    <h4>Entrega do titulo</h4>
+                    <p>ID da venda: <input type="text" name="ID" required="required"></p>
+                    <p>previsão da devolução: </p>
+                    <p><input type="date" name="dataDev" required="required"></p>
+                    <p>Data da devolução </p>
+                    <p><input type="date" name="dataDev2" required="required"></p>
+                    <p><input class="buttonSubmit" type=submit value="Inserir entrega"></p>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    </section>
+
+</body>
+
+</html>

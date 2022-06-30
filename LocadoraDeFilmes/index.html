@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adicione cliente ou titulo de filme</title>
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" type="text/css" href="style.scss">
+</head>
+
+<body>
+    <section class="paginaLoja">
+    </section>
+    <section class="backgroundlistaloja">
+    </section>
+
+
+
+    <section class="listaloja">
+    </section>
+
+
+    <section class="listafuncoes">
+        <div class="cardOpcoes">
+
+            <div class="textoOpcoes">
+                <div class="textoFunc">
+                    <form action="index.html" method="post"> <input type="submit" value="Adicione cliente ou filme"
+                            class="buttonLista" <br /> </form>
+                    <form action="RetiradaEntrega.html" method="post"> <input type="submit"
+                            value="Retirada e entrega de titulos" class="buttonLista" <br /> </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="listaADD">
+        <h1> Adicione um cliente ou titulo de filme</h1>
+    </section>
+    <section class="listaInput">
+        <div class="divlista">
+            <div>
+                <form action="addCliente.php" method="post">
+                    <h4>Adicione o cliente</h4>
+                    <p>Nome: <input type="text" name="cliente" required="required"></p>
+                    <p>CPF: <input type="text" name="CPF" required="required"></p>
+                    <p>Endereço: <input type="text" name="endereco" required="required"></p>
+                    <p><input class="buttonSubmit" type=submit value="Inserir cliente"></p>
+                </form>
+            </div>
+            <div>
+                <form action="addTitulo.php" method="post">
+                    <h4>Adicione o titulo</h4>
+                    <p>Nome: <input type="text" name="titulo" required="required"></p>
+                    <p>Duração: <input type="text" name="duracao" required="required"></p>
+                    <p>Data de lançamento: <input type="text" name="dataLanca" required="required"></p>
+                    <p><input class="buttonSubmit" type=submit value="Inserir titulo"></p>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
